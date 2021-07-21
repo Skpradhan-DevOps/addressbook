@@ -10,9 +10,9 @@ pipeline {
 
 
 
-           maven 'maven' 
+           maven 'Mymaven' 
 
-           jdk 'java8'
+           jdk 'Myjava'
 
     }
 
@@ -20,7 +20,7 @@ pipeline {
 
     stages{
 
-        stage ('Code Validate'){
+        stage ('Code1 Validate'){
 
             steps {
 
@@ -40,7 +40,7 @@ pipeline {
 
         }
 
-        stage ('Code Compilation'){
+        stage ('Code1 Compilation'){
 
             steps {
 
@@ -58,7 +58,7 @@ pipeline {
 
 
 
-        stage ('Code Test'){
+        stage ('Code1 Test'){
 
             steps{
 
@@ -74,7 +74,7 @@ pipeline {
 
         }
 
-        stage ('Code Package') {
+        stage ('Code1 Package') {
 
             steps{
 
